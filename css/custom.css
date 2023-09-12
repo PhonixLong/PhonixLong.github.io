@@ -77,3 +77,57 @@ h1::before, h2::before, h3::before, h4::before, h5::before, h6::before {
         transform: rotate(-1turn)
     }
 }
+
+#article-container ol > li::marker {
+    content: none;
+}
+
+#article-container ol,#article-container ul,#page ol,#page ul {
+    counter-reset: section;
+    padding-left: 10px
+}
+
+
+#article-container ol>li:not(.tab),#page ol>li:not(.tab) {
+    padding: .2em .2em .2em 1.8em
+}
+
+#article-container ul li:not(.tab),#page ul li:not(.tab) {
+    position: relative;
+    margin: .2rem 0;
+    list-style: inside
+}
+
+#article-container ol li:not(.tab),#page ol li:not(.tab) {
+    position: relative;
+    margin: .2rem 0;
+    list-style: none
+}
+
+#article-container ol li:not(.tab), #page ol li:not(.tab) {
+    position: relative;
+    margin: .2rem 0;
+    list-style: none;
+}
+
+#article-container ol li:before,#page ol li:before {
+    background: var(--theme-primary-color);
+    cursor: default;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transition: all .3s ease-out 0s
+}
+
+#article-container ol>li::before, #page ol>li::before {
+    margin-top: .725em;
+    width: 1.45em;
+    height: 1.45em;
+    border-radius: .725em;
+    content: counter(section);
+    counter-increment: section 1;
+    text-align: center;
+    font-size: .85em;
+    line-height: 1.45em;
+}
