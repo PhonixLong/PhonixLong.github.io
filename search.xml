@@ -23,7 +23,7 @@
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo init &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
 
 <p>本地启动</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo s <span class="literal">-g</span> <span class="literal">--debug</span></span><br></pre></td></tr></table></figure>
 
 <p>其它命令</p>
 <figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">hexo clean <span class="comment"># 清空缓存文件和静态文件</span></span><br><span class="line">hexo g <span class="comment"># 生成静态文件</span></span><br><span class="line">hexo d <span class="comment"># 部署网站</span></span><br></pre></td></tr></table></figure>
